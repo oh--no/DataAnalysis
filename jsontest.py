@@ -44,7 +44,9 @@ def article_overview(kind, period):
     titles = []
     urls =[]
     # YOUR CODE HERE
-
+    for item in data:
+        title = item.findall('title').text
+        titles.append(title)
     return (titles, urls)
 
 
